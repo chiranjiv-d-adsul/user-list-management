@@ -20,6 +20,7 @@ const CreateList = () => {
     await createList({ title, customProperties });
     setTitle('');
     setCustomProperties([{ title: '', defaultValue: '' }]);
+    window.location.reload();
   };
 
   return (
@@ -31,6 +32,8 @@ const CreateList = () => {
         onChange={(e) => setTitle(e.target.value)}
         placeholder="List Title"
         className="border border-gray-300 rounded-md px-3 py-2 mb-2 w-full"
+        required
+
       />
       {customProperties.map((prop, index) => (
         <div key={index} className="mb-2">
@@ -47,11 +50,13 @@ const CreateList = () => {
             onChange={(e) => handlePropertyChange(index, 'defaultValue', e.target.value)}
             placeholder="Default Value"
             className="border border-gray-300 rounded-md px-3 py-2"
+
           />
         </div>
       ))}
       <button type="button" onClick={handleAddProperty} className="bg-blue-500 text-white px-4 py-2 rounded-md mr-2">Add Property</button>
       <button type="submit" className="bg-green-500 text-white px-4 py-2 rounded-md">Create List</button>
+
     </form>
   );
 };
