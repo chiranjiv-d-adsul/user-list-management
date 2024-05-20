@@ -24,6 +24,7 @@ const getList = async (req, res) => {
   try {
     const listId = req.params.listId;
     const list = await User.findById(listId).populate('users');
+    comsole.log(list);
     res.json(list);
   } catch (error) {
     console.error('Error fetching list:', error);

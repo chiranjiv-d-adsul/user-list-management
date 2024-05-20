@@ -6,6 +6,5 @@ const upload = multer({ dest: 'uploads/' });
 
 const router = express.Router();
 
-router.post('/:id/userList', upload.single('file'), addUserFromCSV); // Changed from '/:id/users' to '/lists/:id/users'
-
+router.post('/:id/userList', upload.single('file'), addUserFromCSV);
 module.exports = router;
