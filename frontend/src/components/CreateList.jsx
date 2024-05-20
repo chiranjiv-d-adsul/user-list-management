@@ -3,7 +3,7 @@ import { createList } from '../api';
 
 const CreateList = () => {
   const [title, setTitle] = useState('');
-  const [customProperties, setCustomProperties] = useState([{ title: '', defaultValue: '' }]);
+  const [customProperties, setCustomProperties] = useState([{ title: 'city', defaultValue: '' }]);
 
   const handleAddProperty = () => {
     setCustomProperties([...customProperties, { title: '', defaultValue: '' }]);
