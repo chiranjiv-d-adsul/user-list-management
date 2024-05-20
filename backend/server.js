@@ -7,7 +7,7 @@ const cors = require('cors'); // Import the cors middleware
 // const userRoutes = require('./routes/userRoutes');
 // const emailRoutes = require('./routes/emailRoutes');
 const { errorHandler } = require('./middlewares/errorHandler');
-const v1route = require('./routes/v1/index');
+// const v1route = require('./routes/v1/index');
 const apiV1Routes = require("./routes/index");
 
 dotenv.config();
