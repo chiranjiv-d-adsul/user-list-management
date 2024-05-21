@@ -4,6 +4,8 @@
 
 The User List Management API is designed to manage user lists , upload users to selected list via CSV, and send emails to users on that created list. The API is built using Express.js and MongoDB, with the frontend developed in React and Vite.
 
+## Deployed Application:- https://thunderous-pavlova-31149b.netlify.app/
+
 ## Features
 
 - *Create User List*: Create a new user list with custom properties.
